@@ -1,0 +1,101 @@
+{
+    "name": "@hapiness/proxy",
+    "version": "1.0.0",
+    "description": "Proxy extension for Hapiness",
+    "main": "commonjs/index.js",
+    "types": "index.d.ts",
+    "private": false,
+    "scripts": {
+        "test": "make test",
+        "pretest": "make pretest",
+        "coveralls": "make coveralls",
+        "packaging": "make packaging",
+        "prebuild": "make pretest && make test && make clean",
+        "build": "make tsc",
+        "postbuild": "make packaging"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/hapinessjs/proxy-module.git"
+    },
+    "keywords": [
+        "HapiJS",
+        "Hapi",
+        "Framework",
+        "NodeJS",
+        "Node",
+        "HTTP",
+        "Proxy",
+        "API",
+        "REST",
+        "Streams",
+        "Async",
+        "Decorator",
+        "RxJS",
+        "Rx",
+        "ReactiveX",
+        "Observable",
+        "Observer",
+        "Module",
+        "ES2015",
+        "ES2016",
+        "ES2017",
+        "ES6",
+        "ES7",
+        "ES8",
+        "Typescript"
+    ],
+    "contributors": [
+        {
+            "name": "Julien Fauville",
+            "url": "https://github.com/Juneil"
+        },
+        {
+            "name": "Antoine Gomez",
+            "url": "https://github.com/antoinegomez"
+        },
+        {
+            "name": "Sébastien Ritz",
+            "url": "https://github.com/reptilbud"
+        },
+        {
+            "name": "Nicolas Jessel",
+            "url": "https://github.com/njl07"
+        },
+        {
+            "name": "Tara Lerias",
+            "url": "https://github.com/tlerias"
+        }
+    ],
+    "license": "SEE LICENSE IN https://github.com/hapinessjs/hapiness/blob/master/LICENSE.md",
+    "bugs": {
+        "url": "https://github.com/hapinessjs/hapiness/issues"
+    },
+    "homepage": "https://github.com/hapinessjs/hapiness#readme",
+    "dependencies": {
+        "@types/node": "^9.6.0",
+        "debug": "^3.1.0"
+    },
+    "devDependencies": {
+        "@hapiness/core": "^1.5.4",
+        "@types/fs-extra": "^5.0.3",
+        "coveralls": "^3.0.2",
+        "fs-extra": "^6.0.1",
+        "istanbul": "^1.1.0-alpha.1",
+        "mocha": "^4.0.1",
+        "mocha-typescript": "^1.1.16",
+        "rimraf": "^2.6.2",
+        "rxjs": "^5.5.7",
+        "ts-node": "^7.0.0",
+        "tslint": "^5.10.0",
+        "typescript": "^2.9.2",
+        "unit.js": "^2.0.0"
+    },
+    "engines": {
+        "node": ">=9.0.0"
+    },
+    "peerDependencies": {
+        "rxjs": "^5.5.7",
+        "@hapiness/core": "^1.5.4"
+    }
+}
