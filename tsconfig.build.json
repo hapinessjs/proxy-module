@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/commonjs",
+    "rootDir": "./src",
+    "declarationDir": "./dist"
+  },
+  "exclude": [
+    "src/externals",
+    "node_modules",
+    "dist",
+    "test",
+    "tools"
+  ]
+}
