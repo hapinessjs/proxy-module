@@ -73,12 +73,19 @@
     },
     "homepage": "https://github.com/hapinessjs/hapiness#readme",
     "dependencies": {
-        "@types/node": "^9.6.0",
-        "debug": "^3.1.0"
+        "@hapiness/biim": "^1.4.0",
+        "debug": "^3.1.0",
+        "h2o2": "^8.1.2",
+        "hapi": "^17.5.2",
+        "wreck": "^14.0.2"
     },
     "devDependencies": {
         "@hapiness/core": "^1.5.4",
         "@types/fs-extra": "^5.0.3",
+        "@types/h2o2": "^5.4.7",
+        "@types/hapi": "^17.0.14",
+        "@types/node": "^9.6.0",
+        "@types/wreck": "^14.0.0",
         "coveralls": "^3.0.2",
         "fs-extra": "^6.0.1",
         "istanbul": "^1.1.0-alpha.1",
