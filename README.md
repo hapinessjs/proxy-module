@@ -1,2 +1,2 @@
-# proxy-module
-Proxy Module and Extension for Hapiness
+# Proxy Extension
+In development
