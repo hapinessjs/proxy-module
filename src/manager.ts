@@ -27,12 +27,9 @@ export class ProxyManager {
             .do(() => {
                 if (this.auth) {
                     const meta = extractMetadataByDecorator<ProxyAuth>(this.auth.token, 'ProxyAuth');
-                    console.log('YOOOOOO', meta);
                     const scheme = (server, options) => {
-                        console.log('FUCKCKCKCKC');
                         return {
                             authenticate: (request, h) => {
-                                console.log('HELLO');
                                 // const authorization = request.headers.authorization;
                                 // if (!authorization) {
                                 //     throw Biim.unauthorized(null, 'Custom');
