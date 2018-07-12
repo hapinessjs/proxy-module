@@ -48,6 +48,7 @@ export class ProxyManager {
                     path: '/{p*}',
                     handler: {
                         proxy: {
+                            passThrough: true,
                             mapUri: request => this.requestHandler(request),
                             onResponse: (err, res, req, reply) => {
                                 if (err) {
